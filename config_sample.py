@@ -258,8 +258,10 @@ postprocess = {
 
     # process_movies: list of interfaces to post-process movies against
     # couchpotato sometimes depends on this data for API usage, definitely recommended
-    # options: ['OMDB']
-    'process_movies': ['OMDB'],
+    # options: ['omdb', 'tmdb']
+    'process_movies': ['omdb', 'tmdb'],
+    'tmdb_api_key': '',
+    'omdb_api_key': '',
 
     # process_tvshows: list of interfaces to post-process tvshows against
     # sickbeard sometimes depends on this data for API usage, definitely recommended

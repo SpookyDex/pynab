@@ -6,8 +6,8 @@ bottle
 xmltodict
 pynzb
 requests
-roman
-regex>=2.4.44
+roman>=2.0.0
+regex==2014.05.17
 lxml
 daemonize
 colorlog
@@ -23,11 +23,14 @@ sleekxmpp
 eventlet
 requests-futures
 irc
+six>=1.10.0
 colorama
 pandas
 beautifulsoup4
 pySmartDL
-pytvmaze
+pytvmaze<2.0
 git+https://github.com/PyMySQL/PyMySQL.git
 nltk
-
+jaraco.itertools
+jaraco.collections
+jaraco.text

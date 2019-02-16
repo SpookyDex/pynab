@@ -292,7 +292,7 @@ postprocess = {
     # expects data in newznab sql dump format
     # 'http://www.newznab.com/getregex.php?newznabID=<id>'
     'regex_type': 'nzedb',
-    'regex_url': 'https://raw.githubusercontent.com/nZEDb/nZEDb/master/resources/db/schema/data/10-release_naming_regexes.tsv',
+    'regex_url': 'https://raw.githubusercontent.com/nZEDb/nZEDb/0.x/resources/db/schema/data/10-release_naming_regexes.tsv',
 
     # blacklist_url: url to retrieve blacklists from
     # generally leave alone
@@ -395,4 +395,26 @@ mongo = {
 
     # db: database name in mongo
     'db': 'pynab',
+}
+
+# Prebot to scrape pre/request ID's
+# Currently Regex is only set up for nZEDbPRE on irc.synirc.net
+# Defaults should most likely be kept (Except for nick)
+prebot = {
+    # nick: nick of the prebot
+    # try not to use random characters as this may result in a ban
+    # REMEMBER TO SET THIS
+    'nick': '',
+
+    # channel: channel to join
+    # default: #nZEDbPRE
+    'channel': '#nZEDbPRE',
+
+    # server: IRC server to join
+    # default: irc.synirc.net
+    'server': 'irc.synirc.net',
+
+    # port: port used to connect to the IRC server
+    # default: 6667
+    'port': 6667,
 }

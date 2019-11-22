@@ -36,8 +36,11 @@ def search(data):
         showname = clean_name
 
     maze_show = None
+
+    tvm = pytvmaze.TVMaze()
+
     try:
-        maze_show = pytvmaze.get_show(show_name=showname, show_year=year, show_country=country)
+        maze_show = tvm.get_show(show_name=showname, show_year=year, show_country=country)
     except Exception as e:
         log.debug('tvmaze: exception: {}'.format(e))
 

@@ -3,11 +3,11 @@ import difflib
 
 from pynab import log
 import pynab.ids
+import config
 
 
-OMDB_SEARCH_URL = 'http://www.omdbapi.com/?s='
-
-
+API_KEY = config.postprocess.get('omdb_api_key')
+OMDB_SEARCH_URL = 'http://www.omdbapi.com/?apikey=' + API_KEY + '&?s='
 NAME = 'OMDB'
 
 
